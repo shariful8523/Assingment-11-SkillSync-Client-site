@@ -5,6 +5,7 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../page/Home/Home";
 import Register from "../page/Register";
 import SingIn from "../page/SingIn";
+import TutorsDetails from "../page/TutorsDetails";
 
   const router = createBrowserRouter([
     {
@@ -14,6 +15,11 @@ import SingIn from "../page/SingIn";
         {
             path: '/',
             element: <Home></Home>
+        },
+        {
+           path: '/tutors/:id',
+           element: <TutorsDetails></TutorsDetails>,
+           loader: ({params}) => fetch(`http://localhost:3000/tutors/${params.id}`) 
         },
         {
             path: 'register',

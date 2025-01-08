@@ -19,8 +19,8 @@ const Navbar = () => {
 
     const link = <>
         <li><NavLink to="/" >Home</NavLink></li>
-        <li><a>Item 2</a></li>
-        <li><a>Item 3</a></li>
+        <li><a>Add Tutors</a></li>
+        <li><a>My Tutors</a></li>
 
 
     </>
